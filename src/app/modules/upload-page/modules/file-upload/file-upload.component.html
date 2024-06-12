@@ -1,0 +1,53 @@
+<div class="file-upload grid md:grid-cols-2 grid-cols-1 rounded-3xl bg-white shadow-[0px_0px_65px_-15px_rgba(0,0,0,0.3)]">
+  
+  <!-- Left side - file browser and drop -->
+  <div class="p-8 md:p-16 grid grid-cols-1 justify-center size-full">
+    <h1 class="file-upload__title text-orange-400" style="font-weight: 500">Upload Video</h1>
+    
+    <div class="w-full file-upload_input border-dashed border-2 bg-orange-50 border-orange-300 rounded-3xl grid place-content-center text-center text-orange-400 py-8">
+      <div class="text-center">
+        <span class="material-symbols-outlined text-8xl">
+          cloud_upload
+        </span>
+      </div>
+      
+      <div class="text-center w-fit">
+        <p class="text-xl font-semibold m-0">Drag and Drop files</p>
+
+        <div class="flex items-center py-4">
+          <mat-divider class="w-full"></mat-divider>
+          <p class="w-min px-4 flex-none text-center items-center m-0">or</p>
+          <mat-divider class="w-full"></mat-divider>
+        </div>
+
+        <button mat-raised-button color="bg-orange-400" class="pill">Browse</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="p-16 bg-orange-50 rounded-3xl shadow-[-5px_0px_15px_-5px_rgba(0,0,0,0.3)]">
+    <h1 class="file-upload__title text-orange-400 h-auto" style="font-weight: 500">Uploading</h1>
+    
+    
+    <div class="file-upload__progress flex items-center justify-between gap-4">
+
+      <div class="flex-initial size-8 bg-white">
+        <round-progress class="" [responsive]="true" [rounded]="true" [current]="50" [max]="100" [color]="colors.orange[400]" [stroke]="20" ></round-progress> 
+      </div>
+
+      <div class="filename-input_container flex-1 border-2 pill border-orange-400 bg-white overflow-hidden">
+        <input placeholder="Enter filename" type="text" class="filename-input size-full p-2 outline-none" />
+      </div>
+
+      <div class="flex-initial">
+        <button mat-icon-button color="primary" class="pill">
+          <mat-icon>done</mat-icon>
+        </button>
+      </div>
+
+      <!-- <mat-progress-bar mode="determinate" value="50" class="flex-1"></mat-progress-bar> -->
+    </div>
+
+  </div>
+</div>

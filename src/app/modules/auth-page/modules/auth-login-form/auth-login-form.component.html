@@ -1,0 +1,35 @@
+<div class="grid grid-cols-1 justify-center">
+
+  <!-- User form -->
+  <mat-form-field appearance="outline" floatLabel="always">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="user@example.com" type="email">
+  </mat-form-field>
+  <mat-form-field appearance="outline" floatLabel="always">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="min 8 characters" type="password">
+  </mat-form-field>
+
+  <div class="flex justify-center">
+    <button mat-flat-button color="primary-70" class="rounded flex-1" style="padding: 1.5em" >Login</button>
+  </div>
+
+  <!-- divider -->
+  <div class="py-2 flex items-center">
+    <mat-divider class="flex-1"></mat-divider>
+    <p class="w-min px-4 flex-none text-center items-center m-0">or</p>
+    <mat-divider class="flex-1"></mat-divider>
+  </div>
+
+  <!-- Login with google -->
+  <div class="flex justify-center">
+    <button mat-stroked-button color="white" class="rounded flex-1" style="padding: 1.5em">
+      <div class="flex items-center">
+        <img src="/icons/Google_Logo.svg" alt="google-icon" class="w-6 h-6 mr-2 flex-auto" />
+        <div class="flex-auto">
+          Login with Google
+        </div>
+      </div>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="auth-page flex justify-center items-stretch h-full">
+
+  <div class="grid grid-cols-1 md:grid-cols-2 h-full w-full md:w-auto max-w-full md:aspect-video">
+    
+    <div class="auth-section h-full flex items-center justify-center relative">
+      <div class="absolute top-0 left-0 p-4">
+        <button mat-icon-button class="text-white">
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+      </div>
+
+      <div class="auth-section__content">
+
+        <div class="gap-2 items-end pb-4">
+          <div class="w-full flex justify-start pb-4">
+            <img class="max-h-24 h-24 aspect-square rounded-3xl auth-section__logo" src="/Logo.webp" alt="logo" />
+          </div>
+          <h1 class="auth-section__title" style="margin: 0">Welcome to Video Translator AI</h1>
+        </div>
+
+        <p class="auth-section__description pb-4">Please sign in to continue</p>
+
+        <div class="auth-section__form">
+          <app-auth-login-form></app-auth-login-form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="image-section p-8 hidden md:block h-full">
+      <div class="image-container h-full rounded-3xl overflow-hidden">
+        <img class="h-full object-cover" src="/Upload_image.webp" alt="auth-page-image" />
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,15 @@
+// .pill {
+//   border-radius: 9999px;
+// }
+
+.rounded {
+  border-radius: 14px;
+}
+
+:host ::ng-deep .mdc-text-field--outlined {
+  --mdc-outlined-text-field-container-shape: 14px;
+}
+
+.m-0 {
+  margin: 0;
+}
