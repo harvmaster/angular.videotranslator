@@ -3,15 +3,15 @@
   <!-- User form -->
   <mat-form-field appearance="outline" floatLabel="always">
     <mat-label>Email</mat-label>
-    <input matInput placeholder="user@example.com" type="email">
+    <input matInput placeholder="user@example.com" type="email" [value]="email">
   </mat-form-field>
   <mat-form-field appearance="outline" floatLabel="always">
     <mat-label>Password</mat-label>
-    <input matInput placeholder="min 8 characters" type="password">
+    <input matInput placeholder="min 8 characters" type="password" [value]="password">
   </mat-form-field>
 
   <div class="flex justify-center">
-    <button mat-flat-button color="primary-70" class="rounded flex-1" style="padding: 1.5em" >Login</button>
+    <button mat-flat-button color="primary-70" class="rounded flex-1" style="padding: 1.5em" (click)="loginWithEmail()" >Login</button>
   </div>
 
   <!-- divider -->
@@ -23,7 +23,7 @@
 
   <!-- Login with google -->
   <div class="flex justify-center">
-    <button mat-stroked-button color="white" class="rounded flex-1" style="padding: 1.5em">
+    <button mat-stroked-button color="white" class="rounded flex-1" style="padding: 1.5em" (click)="routeToGoogleLogin()">
       <div class="flex items-center">
         <img src="/icons/Google_Logo.svg" alt="google-icon" class="w-6 h-6 mr-2 flex-auto" />
         <div class="flex-auto">
