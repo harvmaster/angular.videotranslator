@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { MatButtonModule } from '@angular/material/button';
 
-import { AuthLoginFormComponent } from './modules/auth-login-form/auth-login-form.component';
+import { AuthLoginFormComponent } from './components/auth-login-form/auth-login-form.component';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { FileUploadComponent } from './modules/file-upload/file-upload.component';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 @Component({
   selector: 'app-upload-page',
